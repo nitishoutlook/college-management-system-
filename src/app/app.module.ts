@@ -9,19 +9,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { SideNaveComponent } from './shared/components/side-nave/side-nave.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { MatButtonModule } from '@angular/material/button';
 
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
+import { MaterialModule } from './shared/material.module';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, SideNaveComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
+    MaterialModule
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
