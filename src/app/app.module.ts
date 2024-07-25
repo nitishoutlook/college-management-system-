@@ -9,16 +9,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { SideNaveComponent } from './shared/components/side-nave/side-nave.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-
 import { MaterialModule } from './shared/material.module';
-
+import { CardsComponent } from './shared/components/cards/cards/cards.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SideNaveComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MaterialModule
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    SideNaveComponent,
+    CardsComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule, MaterialModule],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,8 @@
+<div class="card-container">
+  <div class="card" *ngFor="let item of department">
+    <div class="text_wrapper">
+      <h3>{{ item.department_name }}</h3>
+    </div>
+    <button class="button" (click)="getDetails(item.action)">View</button>
+  </div>
+</div>
