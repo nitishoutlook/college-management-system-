@@ -11,12 +11,16 @@ import { SideNaveComponent } from './shared/components/side-nave/side-nave.compo
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MaterialModule } from './shared/material.module';
 import { CardsComponent } from './shared/components/cards/cards/cards.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SideNaveComponent,
     CardsComponent,
+    
+   
   ],
   imports: [BrowserModule, AppRoutingModule, MaterialModule],
   providers: [provideClientHydration(), provideAnimationsAsync()],
