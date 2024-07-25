@@ -28,3 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 addtional NPM
 npm install --save @angular/material @angular/cdk
+
+https://stackblitz.com/edit/angular-material-sidenav-with-mini-variant?file=src%2Fapp%2Fapp.component.ts
