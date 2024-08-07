@@ -1,11 +1,17 @@
-.mainwapper{
-    display: flex;
-  
-    .sidemenu_wrapper{
-        border-right: 1px solid #c5c6cdc2;
-        width: 200px;
-        height: 100vh;
-        background: #4050b5;
-    }
-   
+.mainwapper {
+  display: flex;
+
+  .sidemenu_wrapper {
+    border-right: 1px solid #c5c6cdc2;
+    width: 200px;
+    height: 100vh;
+    background: #4050b5;
+  }
+
+  //   .submenu_wrapper {
+  //     width: 100%;
+  //     overflow-y: auto;
+  //     height: 600px;
+  //     overflow-x: hidden;
+  //   }
 }

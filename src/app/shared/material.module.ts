@@ -91,9 +91,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     PortalModule,
     ScrollingModule,
   ],
-  declarations: [
-    NotFoundComponent
-  ],
+  declarations: [NotFoundComponent],
 })
 export class MaterialModule {}
 
