@@ -7,28 +7,27 @@ import { StudentMigrationComponent } from './student-migration/student-migration
 
 const routes: Routes = [
   {
-    path:'',
-    component:StudentManagementComponent,
-    children:[
-       
+    path: '',
+    component: StudentManagementComponent,
+    children: [
       {
-        path:"student-addmission",
-        component:StudentAddmissionComponent
+        path: 'student-addmission',
+        component: StudentAddmissionComponent,
       },
       {
-        path:'student-migration',
-        component:StudentMigrationComponent
-    
-      }
-      ]
+        path: 'student-migration',
+        component: StudentMigrationComponent,
+      },
+      {
+        path: 'student-table',
+        component: StudentTableComponent,
+      },
+    ],
   },
-
- 
-
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class StudentManagementRoutingModule { }
+export class StudentManagementRoutingModule {}

@@ -1,20 +1,23 @@
-.navlist{
-    display: block;
-    
-    li{
-        list-style: none;
-        margin-right: 20px;
+.navlist {
+  display: block;
+
+  li {
+    list-style: none;
+    margin: 0px;
+
+    a {
+      text-decoration: none;
     }
+  }
 }
 
-.mainwapper{
-    display: flex;
-  
-    .sidemenu_wrapper{
-        border-right: 1px solid #c5c6cdc2;
-        width: 200px;
-        height: 100vh;
-        background: #4050b599;
-    }
-   
+.mainwapper {
+  display: flex;
+
+  .sidemenu_wrapper {
+    border-right: 1px solid #c5c6cdc2;
+    width: 200px;
+    height: 100vh;
+    background: #4050b599;
+  }
 }

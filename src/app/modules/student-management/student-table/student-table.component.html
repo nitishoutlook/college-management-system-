@@ -1,1 +1,34 @@
-<p>student-table works!</p>
+<div>
+  <h2>Submitted Data</h2>
+  <table class="table">
+    <tr>
+      <th>Reg No.</th>
+      <th>Name</th>
+      <th>Date of Birth</th>
+      <th>Email</th>
+      <th>Mobile</th>
+      <th>Gender</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Pin Code</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Course Applied For</th>
+    </tr>
+    <tr *ngFor="let data of studentData">
+      <td>{{ data.registration }}</td>
+      <td>{{ data.name }}</td>
+
+      <td>{{ data.birthDay }}</td>
+      <td>{{ data.email }}</td>
+      <td>{{ data.mobile }}</td>
+      <td>{{ data.gender }}</td>
+      <td>{{ data.address }}</td>
+      <td>{{ data.city }}</td>
+      <td>{{ data.pinCode }}</td>
+      <td>{{ data.state }}</td>
+      <td>{{ data.country }}</td>
+      <td>{{ data.course }}</td>
+    </tr>
+  </table>
+</div>

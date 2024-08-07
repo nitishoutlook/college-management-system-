@@ -6,18 +6,17 @@ import { StudentAddmissionComponent } from './student-addmission/student-addmiss
 import { StudentTableComponent } from './student-table/student-table.component';
 import { StudentMigrationComponent } from './student-migration/student-migration.component';
 import { StudentManagementComponent } from './student-management.component';
-
+import { SubMenuComponent } from '../../shared/components/sub-menu/sub-menu.component';
+import { MaterialModule } from '../../shared/material.module';
 
 @NgModule({
   declarations: [
     StudentAddmissionComponent,
     StudentTableComponent,
     StudentMigrationComponent,
-    StudentManagementComponent
+    StudentManagementComponent,
+    SubMenuComponent,
   ],
-  imports: [
-    CommonModule,
-    StudentManagementRoutingModule
-  ]
+  imports: [CommonModule, StudentManagementRoutingModule, MaterialModule],
 })
-export class StudentManagementModule { }
+export class StudentManagementModule {}
