@@ -1,12 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { MaterialModule } from '../../material.module';
 
 @Component({
-  selector: 'app-sub-menu',
-  templateUrl: './sub-menu.component.html',
-  styleUrl: './sub-menu.component.scss',
+  selector: 'app-internal-menu',
+  standalone: true,
+  imports: [RouterModule,CommonModule,MaterialModule],
+  templateUrl: './internal-menu.component.html',
+  styleUrl: './internal-menu.component.scss'
 })
-export class SubMenuComponent {
-  public routeLinks = [
+export class InternalMenuComponent {
+ public routeLinks = [
     {
       department_name: 'Student Admission',
       action: 'Admission_related',

@@ -12,14 +12,18 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MaterialModule } from './shared/material.module';
 import { CardsComponent } from './shared/components/cards/cards/cards.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SideNaveComponent,
     CardsComponent,
+    
+    
   ],
-  imports: [BrowserModule, AppRoutingModule, MaterialModule],
+  imports: [BrowserModule, AppRoutingModule, MaterialModule,HttpClientModule],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
