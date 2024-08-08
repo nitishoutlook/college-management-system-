@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class SubMenuComponent {
   public routeLinks = [
-    // { link: "about", name: "About", icon: "dashboard" },
-    // { link: "locations", name: "Locations", icon: "account_balance" },
-
     {
       department_name: 'Student Admission',
       action: 'Admission_related',
