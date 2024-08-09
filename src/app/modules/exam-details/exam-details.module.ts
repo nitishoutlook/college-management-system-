@@ -9,6 +9,7 @@ import { PreviousPaperComponent } from './previous-paper/previous-paper.componen
 import { TopperStudentListComponent } from './topper-student-list/topper-student-list.component';
 import { InternalMenuComponent } from '../../shared/components/internal-menu/internal-menu.component';
 import { MaterialModule } from '../../shared/material.module';
+import { BreadCrumbComponent } from '../../shared/components/bread-crumb/bread-crumb.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MaterialModule } from '../../shared/material.module';
     ExamDetailsRoutingModule,
     MaterialModule,
     InternalMenuComponent,
+    BreadCrumbComponent,
   ],
 })
 export class ExamDetailsModule {}

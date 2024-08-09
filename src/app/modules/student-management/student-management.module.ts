@@ -9,6 +9,7 @@ import { StudentManagementComponent } from './student-management.component';
 
 import { MaterialModule } from '../../shared/material.module';
 import { InternalMenuComponent } from '../../shared/components/internal-menu/internal-menu.component';
+import { BreadCrumbComponent } from '../../shared/components/bread-crumb/bread-crumb.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,13 @@ import { InternalMenuComponent } from '../../shared/components/internal-menu/int
     StudentTableComponent,
     StudentMigrationComponent,
     StudentManagementComponent,
-    
   ],
-  imports: [CommonModule, StudentManagementRoutingModule, MaterialModule,InternalMenuComponent],
+  imports: [
+    CommonModule,
+    StudentManagementRoutingModule,
+    MaterialModule,
+    InternalMenuComponent,
+    BreadCrumbComponent,
+  ],
 })
 export class StudentManagementModule {}

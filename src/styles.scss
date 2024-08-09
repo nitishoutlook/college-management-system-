@@ -11,19 +11,20 @@ body {
   background-color: rgb(187, 214, 247);
 }
 
-.feature-module-container{
-  .feature-module-left-container{
+.feature-module-container {
+  .feature-module-left-container {
     min-width: 180px;
-   
+
     background: #4050b5;
+
     height: 100vh;
   }
-  .feature-module-right-container{
+  .feature-module-right-container {
     width: 100%;
   }
 }
-.breadcrum{
+.breadcrum {
   border-top: 1px solid #ddd;
-    height: 39px;
-    background: #2f3e94;
+  height: 39px;
+  background: #2f3e94;
 }

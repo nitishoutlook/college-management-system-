@@ -8,8 +8,7 @@ import { InternTeacherDetailsComponent } from './intern-teacher-details/intern-t
 import { WorkingStaffDetailsComponent } from './working-staff-details/working-staff-details.component';
 import { MaterialModule } from '../../shared/material.module';
 import { InternalMenuComponent } from '../../shared/components/internal-menu/internal-menu.component';
-
-
+import { BreadCrumbComponent } from '../../shared/components/bread-crumb/bread-crumb.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +16,13 @@ import { InternalMenuComponent } from '../../shared/components/internal-menu/int
     TeacherDetailsComponent,
     InternTeacherDetailsComponent,
     WorkingStaffDetailsComponent,
-    
-    
   ],
-  imports: [CommonModule, StaffManagementRoutingModule,MaterialModule,InternalMenuComponent],
+  imports: [
+    CommonModule,
+    StaffManagementRoutingModule,
+    MaterialModule,
+    InternalMenuComponent,
+    BreadCrumbComponent,
+  ],
 })
 export class StaffManagementModule {}

@@ -9,6 +9,7 @@ import { AttendenceManagementComponent } from './attendence-management.component
 import { MaterialModule } from '../../shared/material.module';
 import { InternalMenuComponent } from '../../shared/components/internal-menu/internal-menu.component';
 import { TeacherAttendanceComponent } from './teacher-attendance/teacher-attendance.component';
+import { BreadCrumbComponent } from '../../shared/components/bread-crumb/bread-crumb.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TeacherAttendanceComponent } from './teacher-attendance/teacher-attenda
     AttendenceManagementRoutingModule,
     MaterialModule,
     InternalMenuComponent,
+    BreadCrumbComponent,
   ],
 })
 export class AttendenceManagementModule {}
