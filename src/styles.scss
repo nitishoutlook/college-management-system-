@@ -10,3 +10,20 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: rgb(187, 214, 247);
 }
+
+.feature-module-container{
+  .feature-module-left-container{
+    min-width: 180px;
+   
+    background: #4050b5;
+    height: 100vh;
+  }
+  .feature-module-right-container{
+    width: 100%;
+  }
+}
+.breadcrum{
+  border-top: 1px solid #ddd;
+    height: 39px;
+    background: #2f3e94;
+}
