@@ -7,7 +7,8 @@ import { ExamResultsComponent } from './exam-results/exam-results.component';
 import { ExamSechduleComponent } from './exam-sechdule/exam-sechdule.component';
 import { PreviousPaperComponent } from './previous-paper/previous-paper.component';
 import { TopperStudentListComponent } from './topper-student-list/topper-student-list.component';
-
+import { InternalMenuComponent } from '../../shared/components/internal-menu/internal-menu.component';
+import { MaterialModule } from '../../shared/material.module';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,13 @@ import { TopperStudentListComponent } from './topper-student-list/topper-student
     ExamResultsComponent,
     ExamSechduleComponent,
     PreviousPaperComponent,
-    TopperStudentListComponent
+    TopperStudentListComponent,
   ],
   imports: [
     CommonModule,
-    ExamDetailsRoutingModule
-  ]
+    ExamDetailsRoutingModule,
+    MaterialModule,
+    InternalMenuComponent,
+  ],
 })
-export class ExamDetailsModule { }
+export class ExamDetailsModule {}
