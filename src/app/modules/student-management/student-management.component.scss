@@ -1,23 +1,19 @@
-.navlist {
-  display: block;
 
-  li {
-    list-style: none;
-    margin: 0px;
+.feature-module-container {
+  .feature-module-left-container {
+    min-width: 180px;
 
-    a {
-      text-decoration: none;
-    }
-  }
-}
+    background: #4050b5;
 
-.mainwapper {
-  display: flex;
-
-  .sidemenu_wrapper {
-    border-right: 1px solid #c5c6cdc2;
-    width: 200px;
     height: 100vh;
-    background: #4050b599;
+  }
+  .feature-module-right-container {
+    width: 100%;
+  }
+  .feature-module-right-container{
+    background-color:  #dff1fb;
+    padding: 10px;
+    height: 100vh;
+    overflow-y: scroll;
   }
 }
