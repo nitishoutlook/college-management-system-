@@ -1,8 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../../material.module';
-
+interface routerDataModel{
+  department_name:string,
+  action:string,
+  link:string
+}
 @Component({
   selector: 'app-internal-menu',
   standalone: true,
@@ -10,22 +14,17 @@ import { MaterialModule } from '../../material.module';
   templateUrl: './internal-menu.component.html',
   styleUrl: './internal-menu.component.scss'
 })
-export class InternalMenuComponent {
- public routeLinks = [
-    {
-      department_name: 'Student Admission',
-      action: 'Admission_related',
-      link: 'student-addmission',
-    },
-    {
-      department_name: 'Student Migration',
-      action: 'Migration_related',
-      link: 'student-migration',
-    },
-    {
-      department_name: 'Student Table',
-      action: 'Table_related',
-      link: 'student-table',
-    },
-  ];
+export class InternalMenuComponent implements OnInit{
+
+@Input() routerLinkObj: any
+
+routeLinks!:routerDataModel[]
+
+ngOnInit(): void {
+  
+  this.routeLinks=this.routerLinkObj;
 }
+
+}
+
+

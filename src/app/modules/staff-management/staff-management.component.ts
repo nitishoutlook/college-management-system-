@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class StaffManagementComponent {
 
+  public routeObj = [
+    {
+      department_name: 'Teacher details ',
+      action: 'Admission_related',
+      link: 'intern-teacher-details',
+    },
+    {
+      department_name: 'Exam details',
+      action: 'Migration_related',
+      link: 'teacher-details',
+    },
+    {
+      department_name: 'Student Table',
+      action: 'Table_related',
+      link: 'student-table',
+    },
+  ];
 }
