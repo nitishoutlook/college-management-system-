@@ -1,6 +1,7 @@
 body {
   width: 100%;
 }
+
 h2 {
   font-family: Calibri;
   font-size: 25pt;
@@ -12,47 +13,47 @@ h2 {
   padding: 20px;
 }
 
-table {
-  font-family: Calibri;
-  text-align: left;
-  font-size: 11pt;
-  font-style: normal;
-  font-weight: bold;
-  margin-left: 30px;
-  width: 100%;
-  border-collapse: collapse;
+// table {
+//   font-family: Calibri;
+//   text-align: left;
+//   font-size: 11pt;
+//   font-style: normal;
+//   font-weight: bold;
+//   margin-left: 30px;
+//   width: 100%;
+//   border-collapse: collapse;
 
-  .submitButton {
-    background-color: white;
-    color: green;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-    font-weight: bold;
-  }
+//   .submitButton {
+//     background-color: white;
+//     color: green;
+//     padding: 10px 15px;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     margin-right: 10px;
+//     font-weight: bold;
+//   }
 
-  .resetButton {
-    background-color: white;
-    color: red;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-  }
+//   .resetButton {
+//     background-color: white;
+//     color: red;
+//     padding: 10px 15px;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     font-weight: bold;
+//   }
 
-  button:hover,
-  .resetButton:hover {
-    background-color: red;
-    color: white;
-  }
-  .submitButton:hover {
-    background-color: green;
-    color: white;
-  }
-}
-table.inner {
-  border: 0px;
-}
+//   button:hover,
+//   .resetButton:hover {
+//     background-color: red;
+//     color: white;
+//   }
+//   .submitButton:hover {
+//     background-color: green;
+//     color: white;
+//   }
+// }
+// table.inner {
+//   border: 0px;
+// }
