@@ -33,6 +33,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'leave-management',
+    loadChildren: () =>
+      import('./modules/leave-management/leave-management.module').then(
+        (m) => m.LeaveManagementModule
+      ),
+  },
+  {
     path: '**',
     component: NotFoundComponent,
   },
