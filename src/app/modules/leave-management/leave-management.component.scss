@@ -1,0 +1,18 @@
+.feature-module-container {
+  .feature-module-left-container {
+    min-width: 180px;
+
+    background: #4050b5;
+
+    height: 100vh;
+  }
+  .feature-module-right-container {
+    width: 100%;
+  }
+  .feature-module-right-container {
+    background-color: #dff1fb;
+    padding: 10px;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}

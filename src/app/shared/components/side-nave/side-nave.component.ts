@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-side-nave',
   templateUrl: './side-nave.component.html',
-  styleUrl: './side-nave.component.scss'
+  styleUrl: './side-nave.component.scss',
 })
 export class SideNaveComponent {
   public routeLinks = [
@@ -13,24 +13,27 @@ export class SideNaveComponent {
     {
       department_name: 'Student Mgmt',
       action: 'Student_related',
-      link: "student-management",
+      link: 'student-management',
     },
     {
       department_name: 'Attendence Mgmt',
       action: 'Attendece_related',
-      link: "attendence-management",
+      link: 'attendence-management',
     },
     {
       department_name: 'Exam Details',
       action: 'Exam_related',
-      link: "exam-details",
+      link: 'exam-details',
     },
     {
       department_name: 'Staff Mgmt',
       action: 'staff_related',
-      link: "staff-management",
+      link: 'staff-management',
+    },
+    {
+      department_name: 'Leave Mgmt',
+      action: 'Leave_related',
+      link: 'leave-management',
     },
   ];
-
-  
 }
